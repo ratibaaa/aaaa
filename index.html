@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYLURE | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Images/logo.png" alt="SKYLURE Logo" class="logo-img">
+                <div class="logo-content">
+                    <h1>SKYLURE</h1>
+                    <p class="tagline">Elevating the way you travel</p>
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="flights.html">Flights</a>
+                <a href="login.html">My Account</a>
+                <a href="#offers" class="offers-link">Offers</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">Not just a flight <span class="gold">A feeling</span></h1>
+                <h2 class="hero-subtitle">Don't visit places. <span class="highlight">Collect stories</span></h2>
+                <p class="hero-text">Where every journey is a chapter in your personal storybook</p>
+                <div class="quote">
+                    <p>We weren't built to stay<br>We were built to explore</p>
+                </div>
+                <a href="#booking" class="cta-button">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Widget -->
+    <section class="booking-widget" id="booking">
+        <div class="container">
+            <h2>Find Your Flight</h2>
+            <form class="booking-form" action="flights.html" method="get">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-plane-departure"></i> From</label>
+                        <select name="from" required>
+                            <option value="">Select departure city</option>
+                            <option value="ALG">Algiers (ALG)</option>
+                            <option value="ORN">Oran (ORN)</option>
+                            <option value="CZL">Constantine (CZL)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-plane-arrival"></i> To</label>
+                        <select name="to" required>
+                            <option value="">Select destination</option>
+                            <option value="CDG">Paris (CDG)</option>
+                            <option value="LHR">London (LHR)</option>
+                            <option value="MAD">Madrid (MAD)</option>
+                            <option value="IST">Istanbul (IST)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> Departure</label>
+                        <input type="date" name="departure" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-users"></i> Passengers</label>
+                        <select name="passengers">
+                            <option value="1">1 Passenger</option>
+                            <option value="2" selected>2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4 Passengers</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i> Search Flights
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why <span class="gold">SKYLURE</span></h2>
+            <p class="section-subtitle">We redefine the journey, not just the destination</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Elite Experience</h3>
+                    <p>Every journey feels like first class, regardless of your seat</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Emotion First</h3>
+                    <p>We design flights around feelings, not schedules</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trust & Safety</h3>
+                    <p>Your security and comfort are our highest priority</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Global Network</h3>
+                    <p>Connecting you to dreams across continents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <h2 class="section-title">Exclusive <span class="gold">Offers</span></h2>
+            <p class="section-subtitle">Journeys fade. Stories stay</p>
+            
+            <div class="offers-grid">
+                <div class="offer-card collector">
+                    <div class="offer-badge">COLLECTOR'S OFFER</div>
+                    <h3>Story Collector</h3>
+                    <p class="offer-desc">Collect 4 journeys, unlock a 5th for free</p>
+                    <p class="offer-details">Every flight with us adds to your story collection</p>
+                    <div class="price">4+1 FREE</div>
+                </div>
+                
+                <div class="offer-card circle">
+                    <div class="offer-badge">CIRCLE OFFER</div>
+                    <h3>Midnight Circle</h3>
+                    <p class="offer-desc">Special pricing on night departures</p>
+                    <p class="offer-details">For those who prefer the stars as company</p>
+                    <div class="price">-30%</div>
+                </div>
+                
+                <div class="offer-card first">
+                    <div class="offer-badge">FIRST OFFER</div>
+                    <h3>First Horizon</h3>
+                    <p class="offer-desc">Your first flight with us matters most</p>
+                    <p class="offer-details">Extra care for your inaugural journey</p>
+                    <div class="price">WELCOME</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="payment">
+        <div class="container">
+            <h2 class="section-title">Easy <span class="gold">Payment</span></h2>
+            <p class="section-subtitle">Pay your way, fly your way</p>
+            
+            <div class="payment-methods">
+                <div class="payment-card">
+                    <img src="Images/edahabia.png" alt="EDAHABIA Card" class="card-img">
+                    <h3>EDAHABIA Card</h3>
+                    <p>Pay in DZD with your local card</p>
+                    <div class="card-sample edahabia">EDAHABIA</div>
+                </div>
+                
+                <div class="payment-card">
+                    <img src="Images/visa.png" alt="VISA Card" class="card-img">
+                    <h3>VISA</h3>
+                    <p>International payments in EUR/USD</p>
+                    <div class="card-sample visa">VISA</div>
+                </div>
+                
+                <div class="payment-card">
+                    <img src="Images/mastercard.png" alt="Mastercard" class="card-img">
+                    <h3>Mastercard</h3>
+                    <p>Global acceptance</p>
+                    <div class="card-sample mastercard">MASTERCARD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Quote -->
+    <section class="inspiration">
+        <div class="container">
+            <div class="quote-large">
+                <p>Travel is not movement<br>It's emotion</p>
+                <p class="author">— SKYLURE Philosophy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SKYLURE</h3>
+                    <p class="footer-tagline">Elevating the way you travel</p>
+                    <p class="footer-desc">Designed for dreamers, explorers, and those who feel at home above the clouds</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="flights.html">Flights</a></li>
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-user"></i> Founder: Attou Ratiba</li>
+                        <li><i class="fas fa-phone"></i> +213 792 461 160</li>
+                        <li><i class="fas fa-envelope"></i> skyluretravels@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> SIG, Mascara, Algeria</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SKYLURE. All rights reserved.</p>
+                <p class="footer-quote">Leave beautifully</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

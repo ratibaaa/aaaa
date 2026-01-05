@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYLURE | My Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Images/logo.png" alt="SKYLURE Logo" class="logo-img">
+                <div class="logo-content">
+                    <h1>SKYLURE</h1>
+                    <p class="tagline">Elevating the way you travel</p>
+                </div>
+            </div>
+            
+              <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="flights.html">Flights</a>
+            <a href="login.html" class="active">My Account</a>
+            <a href="index.html#offers" class="offers-link">Offers</a>
+        </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section" id="login">
+        <div class="container">
+            <div class="auth-header">
+                <h1>Welcome to Your <span class="gold">SKYLURE Journey</span></h1>
+                <p>The sky remembers every dream</p>
+            </div>
+            
+            <!-- Login Form -->
+            <div class="auth-form">
+                <form action="login.html#login" method="post">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email Address</label>
+                        <input type="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="support.html">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">
+                        <i class="fas fa-sign-in-alt"></i> Sign In
+                    </button>
+                </form>
+                
+                <div class="auth-switch">
+                    <p>Don't have an account? <a href="#register">Create one</a></p>
+                </div>
+            </div>
+            
+            <!-- Database Simulation -->
+            <div class="database-info">
+                <div class="db-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>SKYLURE Travel Community</h3>
+                <p>Join thousands of travelers creating stories with us.</p>
+                <div class="db-stats">
+                    <div class="stat">
+                        <span class="number">15,827</span>
+                        <span class="label">Active Travelers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">4,562</span>
+                        <span class="label">Stories Collected</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">98.7%</span>
+                        <span class="label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="auth-section" id="register">
+        <div class="container">
+            <div class="auth-header">
+                <h1>Create Your <span class="gold">SKYLURE Account</span></h1>
+                <p>Begin your journey with us</p>
+            </div>
+            
+            <!-- Registration Form -->
+            <div class="auth-form">
+                <form action="login.html#register" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> First Name</label>
+                            <input type="text" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Last Name</label>
+                            <input type="text" name="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email Address</label>
+                        <input type="email" name="email" placeholder="john.doe@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Phone Number</label>
+                        <input type="tel" name="phone" placeholder="+213 XXX XXX XXX" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" name="password" placeholder="Create a password" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Confirm Password</label>
+                            <input type="password" name="confirmPassword" placeholder="Confirm password" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-globe"></i> Country</label>
+                        <select name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="DZ" selected>Algeria</option>
+                            <option value="FR">France</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the Terms of Service and Privacy Policy</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="newsletter" checked>
+                            <span>Send me exclusive offers and travel inspiration</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">
+                        <i class="fas fa-user-plus"></i> Create Account
+                    </button>
+                </form>
+                
+                <div class="auth-switch">
+                    <p>Already have an account? <a href="#login">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SKYLURE</h3>
+                    <p class="footer-tagline">Elevating the way you travel</p>
+                    <p class="footer-desc">Designed for dreamers, explorers, and those who feel at home above the clouds</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#login">Sign In</a></li>
+                        <li><a href="#register">Create Account</a></li>
+                        <li><a href="support.html">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-user"></i> Founder: Attou Ratiba</li>
+                        <li><i class="fas fa-phone"></i> +213 792 461 160</li>
+                        <li><i class="fas fa-envelope"></i> skyluretravels@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> SIG, Mascara, Algeria</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SKYLURE. All rights reserved.</p>
+                <p class="footer-quote">Leave beautifully</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

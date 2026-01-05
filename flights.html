@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYLURE | Find Your Flight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Images/logo.png" alt="SKYLURE Logo" class="logo-img">
+                <div class="logo-content">
+                    <h1>SKYLURE</h1>
+                    <p class="tagline">Elevating the way you travel</p>
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="flights.html" class="active">Flights</a>
+                <a href="login.html">My Account</a>
+                <a href="index.html#offers" class="offers-link">Offers</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flight Search Header -->
+    <section class="flight-header">
+        <div class="container">
+            <h1>Find Your Next <span class="gold">Story</span></h1>
+            <p>Every flight carries a future memory</p>
+        </div>
+    </section>
+
+    <!-- Flight Search Form -->
+    <section class="flight-search">
+        <div class="container">
+            <form class="advanced-search-form" action="flights.html#results" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label><i class="fas fa-plane-departure"></i> From</label>
+                        <select name="flightFrom" required>
+                            <option value="">Select departure city</option>
+                            <option value="ALG">Algiers (ALG)</option>
+                            <option value="ORN">Oran (ORN)</option>
+                            <option value="CZL">Constantine (CZL)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-plane-arrival"></i> To</label>
+                        <select name="flightTo" required>
+                            <option value="">Select destination</option>
+                            <option value="CDG">Paris (CDG)</option>
+                            <option value="LHR">London (LHR)</option>
+                            <option value="MAD">Madrid (MAD)</option>
+                            <option value="IST">Istanbul (IST)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> Departure</label>
+                        <input type="date" name="flightDeparture" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-users"></i> Passengers</label>
+                        <select name="passengers">
+                            <option value="1">1 Passenger</option>
+                            <option value="2" selected>2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4">4 Passengers</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-suitcase"></i> Class</label>
+                        <select name="flightClass">
+                            <option value="economy">Economy</option>
+                            <option value="premium">Premium Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First Class</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="search-actions">
+                    <button type="submit" class="search-flights-btn">
+                        <i class="fas fa-search"></i> Search Flights
+                    </button>
+                    <button type="reset" class="clear-btn">
+                        <i class="fas fa-redo"></i> Clear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Flight Results -->
+    <section class="flight-results" id="results">
+        <div class="container">
+            <h2 class="section-title">Available <span class="gold">Flights</span></h2>
+            <p class="section-subtitle">Journeys fade. Stories stay</p>
+            
+            <div class="flights-list">
+                <!-- Flight 1 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="flight-route">
+                            <div>
+                                <div class="flight-time">08:30</div>
+                                <div class="flight-city">ALG (Algiers)</div>
+                            </div>
+                            <div class="flight-duration">
+                                <i class="fas fa-plane"></i> 3h 15m
+                            </div>
+                            <div>
+                                <div class="flight-time">12:45</div>
+                                <div class="flight-city">CDG (Paris)</div>
+                            </div>
+                        </div>
+                        <div class="flight-airline">
+                            <i class="fas fa-plane"></i> Air Algérie • Economy
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-amount">45,000 DZD</div>
+                        <div class="price-per">per passenger</div>
+                        <a href="login.html" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Flight 2 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="flight-route">
+                            <div>
+                                <div class="flight-time">14:20</div>
+                                <div class="flight-city">ALG (Algiers)</div>
+                            </div>
+                            <div class="flight-duration">
+                                <i class="fas fa-plane"></i> 3h 50m
+                            </div>
+                            <div>
+                                <div class="flight-time">18:10</div>
+                                <div class="flight-city">LHR (London)</div>
+                            </div>
+                        </div>
+                        <div class="flight-airline">
+                            <i class="fas fa-plane"></i> British Airways • Economy
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-amount">52,000 DZD</div>
+                        <div class="price-per">per passenger</div>
+                        <a href="login.html" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Flight 3 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="flight-route">
+                            <div>
+                                <div class="flight-time">10:15</div>
+                                <div class="flight-city">ORN (Oran)</div>
+                            </div>
+                            <div class="flight-duration">
+                                <i class="fas fa-plane"></i> 4h 15m
+                            </div>
+                            <div>
+                                <div class="flight-time">14:30</div>
+                                <div class="flight-city">IST (Istanbul)</div>
+                            </div>
+                        </div>
+                        <div class="flight-airline">
+                            <i class="fas fa-plane"></i> Turkish Airlines • Economy
+                        </div>
+                    </div>
+                    <div class="flight-price">
+                        <div class="price-amount">38,000 DZD</div>
+                        <div class="price-per">per passenger</div>
+                        <a href="login.html" class="book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-info">
+                <h3>Need Help Booking?</h3>
+                <p>To book a flight, please <a href="login.html">login to your account</a> or contact our customer service.</p>
+                <p><i class="fas fa-phone"></i> +213 792 461 160</p>
+                <p><i class="fas fa-envelope"></i> skyluretravels@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SKYLURE</h3>
+                    <p class="footer-tagline">Elevating the way you travel</p>
+                    <p class="footer-desc">To fly is to choose curiosity over comfort</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Need Help?</h4>
+                    <ul>
+                        <li><a href="support.html">Customer Support</a></li>
+                        <li><a href="baggage.html">Baggage Policy</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +213 792 461 160</li>
+                        <li><i class="fas fa-envelope"></i> skyluretravels@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SKYLURE. All rights reserved.</p>
+                <p class="footer-quote">We weren't built to stay. We were built to explore</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
